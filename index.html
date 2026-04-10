@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Guilherme F. Zaiat — CV</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --link: #003399;
+      --rule: #333;
+      --muted: #444;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      padding: 1rem 1.1rem 2.5rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 1rem;
+      line-height: 1.45;
+      color: var(--text);
+      background: #fff;
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      text-align: center;
+      margin: 0 0 0.5rem;
+      letter-spacing: 0.02em;
+    }
+    .contact {
+      text-align: center;
+      font-size: 0.88rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+    .contact a { color: var(--link); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    .sep { margin: 0 0.25rem; color: #888; }
+    .summary {
+      margin: 1rem 0 0.75rem;
+      text-align: justify;
+      hyphens: auto;
+    }
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 400;
+      font-variant: small-caps;
+      letter-spacing: 0.06em;
+      margin: 1rem 0 0.35rem;
+      padding-bottom: 0.2rem;
+      border-bottom: 1px solid var(--rule);
+      text-align: left;
+    }
+    .block-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.35rem 0.75rem;
+      margin-top: 0.65rem;
+      font-weight: 700;
+    }
+    .block-head span.date {
+      font-weight: 400;
+      font-size: 0.92rem;
+      white-space: nowrap;
+    }
+    ul {
+      margin: 0.35rem 0 0.5rem;
+      padding-left: 1.35rem;
+    }
+    li { margin: 0.15rem 0; }
+    li em, p em { font-style: italic; }
+    .skills, .langs {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.35rem 0 0.5rem;
+      font-size: 0.95rem;
+    }
+    .skills td, .langs td {
+      vertical-align: top;
+      padding: 0.2rem 0.5rem 0.2rem 0;
+    }
+    .skills td:first-child, .langs td:first-child {
+      font-weight: 700;
+      white-space: nowrap;
+      width: 38%;
+    }
+    @media (max-width: 22rem) {
+      .skills td:first-child, .langs td:first-child { width: auto; }
+      .skills tr, .langs tr { display: block; margin-bottom: 0.5rem; }
+      .skills td, .langs td { display: block; padding: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Guilherme F. Zaiat</h1>
+    <p class="contact">
+      <a href="https://www.linkedin.com/in/guilherme-ferreira-zaiat-9aab6122b/">LinkedIn</a>
+      <span class="sep">|</span>
+      <a href="mailto:gui.zaiat@gmail.com">gui.zaiat@gmail.com</a>
+      <span class="sep">|</span>
+      +55 35 98897-6768
+      <span class="sep">|</span>
+      Campinas, Brazil
+    </p>
+  </header>
+
+  <p class="summary">
+    Mechanical Engineering undergraduate at UNICAMP, admitted via the <em>olympic quota</em>, and Master's in General Engineering at <em>École Centrale de Lyon</em>, <em>Brafitec</em> student. Experience in dynamic systems, numerical simulation (MATLAB/Simulink, CFD), and automotive project development. Interests in aerospace engineering, control, and data-driven performance optimization.
+  </p>
+
+  <section>
+    <h2>Education</h2>
+    <div class="block-head">
+      <span><strong>University of Campinas (UNICAMP)</strong> — Bachelor's in Mechanical Engineering</span>
+      <span class="date">2021 — 2027</span>
+    </div>
+    <div class="block-head">
+      <span><strong>École Centrale de Lyon</strong> — Master's in General Engineering</span>
+      <span class="date">2023 — 2025</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="block-head">
+      <span><strong>Stellantis Auto SAS</strong> — Île-de-France</span>
+      <span class="date">04.2025—10.2025</span>
+    </div>
+    <ul>
+      <li>Quality internship focused on maintaining and enhancing a <em>Power BI</em> dashboard to consolidate and monitor total warranty cost.</li>
+      <li>Data integration via Snowflake (<em>SQL</em>) for recovery values tied to supplier liability; warranty reporting and KPI management.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+    <div class="block-head">
+      <span><strong>MBD fluid–structure simulation in railway rolling stock</strong></span>
+      <span class="date">2026</span>
+    </div>
+    <ul>
+      <li>Final-year project at UNICAMP on sloshing effects in tank wagons under maneuvers and accelerations. MBD modelling (<em>SIMPACK</em>) with fluid simplifications, and CFD (<em>Ansys Fluent</em>) to assess fluid–structure coupling.</li>
+    </ul>
+
+    <div class="block-head">
+      <span><strong>Vibration reduction via real-time programmable control laws</strong></span>
+      <span class="date">2024 — 2025</span>
+    </div>
+    <ul>
+      <li>Project at the Tribology and Dynamic Systems Laboratory, <em>École Centrale de Lyon</em>, with faculty researchers. <em>Simulink Real-Time</em> models for vibration attenuation in metal beams; <em>MATLAB</em> scripts to automate data acquisition and processing.</li>
+    </ul>
+
+    <div class="block-head">
+      <span><strong>FSAE Unicamp</strong></span>
+      <span class="date">2022 — 2023</span>
+    </div>
+    <ul>
+      <li>Extracurricular team of UNICAMP students that designs, manufactures, and tests a Formula-style vehicle to compete with national and international universities.</li>
+      <li>Electrical and Electronics division: vehicle harness sizing in 3D CAD (<em>Creo Parametric</em>), sensor management for data analysis and telemetry (team software in <em>C#</em>), and electronic fuel-injection map programming. <em>Fulltech</em>.</li>
+      <li>Contributions: reduced wiring harness mass and optimized overall vehicle weight. Automatic gear-shift system integrated with sensors, actuators, and ECU. Integrated data-analysis pipeline in <em>Python</em>.</li>
+      <li>Achieved overall 5th place at the 18th Formula SAE Brazil competition; secured a podium in the acceleration event at the 19th FSAE competition (3rd place).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <table class="skills">
+      <tr><td>Simulation &amp; modeling</td><td>SIMPACK, ANSYS Workbench, ANSYS Fluent, Simulink, MATLAB</td></tr>
+      <tr><td>CAD/CAE</td><td>SolidWorks, Creo Parametric, AutoCAD</td></tr>
+      <tr><td>Programming</td><td>Python, MATLAB, SQL, Arduino</td></tr>
+      <tr><td>Data &amp; reporting</td><td>Power BI, Microsoft Office, VBA</td></tr>
+      <tr><td>Control &amp; dynamics</td><td>Vibration control, Simulink Real-Time, fluid–structure interaction (sloshing)</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Languages</h2>
+    <table class="langs">
+      <tr><td>Portuguese</td><td>Native</td></tr>
+      <tr><td>English</td><td>Advanced — TCF C1 certification</td></tr>
+      <tr><td>French</td><td>Fluent — DELF B2 certification</td></tr>
+    </table>
+  </section>
+</body>
+</html>
